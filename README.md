@@ -1,3 +1,4 @@
+
 # Codeigniter Setting
 
 ## Base URL Config
@@ -17,3 +18,10 @@
       RewriteRule ^(.+)$ index.php?/$1 [L,QSA]
     </IfModule>
 
+## Libraries
+
+    $autoload['libraries']  =  array('database','session','form_validation');
+
+## Helper
+
+    $autoload['helper']  =  array('url','file','form');
